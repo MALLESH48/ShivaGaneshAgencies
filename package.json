@@ -8,9 +8,13 @@
     "body-parser": "*",
     "ejs": "*",
     "express": "*",
+    "ip": "^1.1.5",
     "node-debug": "^0.1.0",
     "node-pre-gyp": "^0.6.39",
-    "sqlite": "*"
+    "sqlite3": "^4.1.1"
+  },
+  "scripts": {
+    "start": "node app.js"
   },
   "license": "LGPL-3.0",
   "bugs": {

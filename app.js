@@ -2,6 +2,7 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
+const ip = require("ip");
 
 /* Database configuration */
 const database = require('./app/config/dbconfig');
@@ -11,8 +12,9 @@ database.init();
 
 /* Init server listening */
 const port = process.argv[2] || 3000;
-app.listen(port, function () {
+app.listen(port, "0.0.0.0",function () {
     console.log("Server listening on port : " + port);
+    console.log(ip.address());
 });
 
 /* Express configuration */

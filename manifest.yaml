@@ -1,0 +1,10 @@
+---
+    applications:
+    - name: myserver
+      buildpack: nodejs_buildpack
+      command: node  app.js
+      memory: 128M
+      disk_quota: 128M
+      host: myserver
+     
+    
