@@ -10,7 +10,7 @@
     "express": "*",
     "ip": "^1.1.5",
     "node-debug": "^0.1.0",
-    "node-pre-gyp": "^0.6.39",
+    "node-pre-gyp": "6.1.0",
     "sqlite3": "^4.1.1"
   },
   "scripts": {
